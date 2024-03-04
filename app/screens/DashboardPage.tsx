@@ -14,6 +14,7 @@ import {
   verticalScale,
   moderateScale,
 } from "../Utils/scalingMetrics";
+import { Link } from "expo-router";
 
 const DashboardPage = () => {
   const [progress, setProgress] = React.useState(0);
@@ -160,10 +161,13 @@ const DashboardPage = () => {
   );
   const renderTopPart = () => (
     <>
-      <Text style={{ textAlign: "center", maxWidth: "70%", color: "white" }}>
+      <Link
+        href={"/screens/IntroPage"}
+        style={{ textAlign: "center", maxWidth: "70%", color: "white" }}
+      >
         For a lot more info about this topic, I suggest visiting my INTRO to
         meditation page
-      </Text>
+      </Link>
 
       <View
         style={{
@@ -252,6 +256,7 @@ const DashboardPage = () => {
   const rednerFooterPart = () => (
     <View style={{ marginTop: verticalScale(40) }}>
       <Text
+        // href={"/screens/BreatherApp"}
         style={{
           textAlign: "center",
           maxWidth: "70%",

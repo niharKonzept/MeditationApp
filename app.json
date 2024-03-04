@@ -2,6 +2,7 @@
   "expo": {
     "name": "MeditationApp",
     "slug": "MeditationApp",
+    
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +25,7 @@
       },
       "package": "com.niharkonzept.MeditationApp"
     },
+    "scheme": "mediationapp",
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -31,6 +33,10 @@
       "eas": {
         "projectId": "f4016d06-57e4-4504-b32e-fd8e04a3e53b"
       }
-    }
+    },
+   
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
